@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html , body{
+
+     width: 100%;
+     height: 100%;
+     /* background-color: black; */
+
+}
+
+
+.main{
+
+     width: 100%;
+     height: 100%;
+}
+
+.nav{
+     
+     width: 100%;
+     height: 60px;
+     background-color: white;
+     color: black;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 0 4vw;
+     border-bottom: 0.7px solid black;
+}
+
+.nav > h1 {
+    font-size: 3vw;
+    font-weight: 900;
+    font-family: "Aladin", system-ui;
+    color: black;
+    text-shadow: 1px 1px 10px black;
+}
+
+.nav i{
+
+     font-size: 3vw;
+     font-weight: 800;
+     display: none;
+}
+
+
+.lists{
+
+     display: flex;
+     align-items: center;
+     gap: 6vw;
+}
+
+.nav .lists li{
+
+     list-style: none;
+     padding: 0vw 1vw;
+     border-radius: 10px;
+     background-color: white;
+     color: black;
+     cursor: pointer;
+     font-size: 1.5vw;
+}
+
+.nav .lists li:hover{
+
+     background-color: black;
+     color: white;
+}
+
+.page1{
+
+     width: 100%;
+     min-height: 100vh;
+     padding: 0 2vw;
+     display: flex;
+     justify-content: center;
+     gap: 4.5vw;
+     flex-wrap:wrap;
+     
+}
+
+.heading > h1{
+
+     text-align: center;
+     padding: 3vw 0; 
+     font-family: 'Aladin';
+     font-weight: 800;
+     font-size: 4vw;
+     letter-spacing: 0.1vw;
+    color: black;
+    text-shadow: 1px 1px 5px rgb(84, 83, 83);
+}
+
+
+.page1 .container{
+
+     width: 350px;
+     height: 400px;
+     /* background-color: lightseagreen; */
+     box-shadow: 1px 1px 10px black;
+     position: relative;
+     border-radius: 10px 10px 10px 10px;
+
+}
+
+.page1 .container img{
+
+     width: 100%;
+     height: 70%;
+     /* border: 1px solid red; */
+     border-radius: 10px 10px 0px 0px;
+     object-fit: cover;
+}
+
+.page1 .container .website-title h2{
+   font-size: 2.5vw;
+      padding: 1vw 0;
+      color: black;
+      padding-left: 1vw;
+}
+
+.page1 .container .btns{
+
+     position: absolute;
+     bottom: 1vw;
+     margin-left: 1vw;
+     display: flex;
+     gap: 2vw;
+     
+}
+.page1 .container .btns button{
+
+     padding: 0.5vw 1vw;
+     font-size: 1.2vw;
+    background-color: white;
+    border-radius: 20px;
+     border: none;
+     box-shadow: 1px 1px 10px rgb(63, 63, 63);
+}
+
+
+
+/* responsive design 
+ */
+
+ @media (max-width:600px) {
+
+
+    .nav > h1 {
+        font-size: 6vw;
+        font-weight: 900;
+        
+    }
+    .heading > h1{
+
+        
+        font-size: 8vw;
+       
+   }
+
+    .page1{
+
+        width: 100%;
+        min-height: 100vh;
+        padding: 0 2vw;
+        display: flex;
+        justify-content: center;
+        gap: 4.5vw;
+        flex-wrap:wrap;
+        
+   }
+
+    .lists{
+
+        display: none;
+    }
+
+
+    .page1 .container .website-title h2{
+        font-size: 8vw;
+        font-weight: 800;
+           padding: 0.5vw 0;
+           color: black;
+           padding-left: 5vw;
+     }
+    .page1 .container .btns button{
+
+         padding: 3vw 4vw;
+         font-size: 3.5vw;
+    }
+    .page1 .container .btns{
+
+        position: absolute;
+        bottom: 5vw;
+        margin-left: 4vw;
+        display: flex;
+        gap: 2vw;
+        
+   }
+
+
+   .nav i{
+
+     display: block;
+     font-size: 4vw;
+   }
+    
+ }
