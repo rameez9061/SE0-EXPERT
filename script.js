@@ -77,3 +77,23 @@ sliding(head);
     window.location.href = url;
 });
 })
+
+
+
+let menu = document.getElementById("menu");
+let slider =document.getElementById("slider");
+
+
+menu.addEventListener("click",()=>{
+
+      if(slider.style.right==="35%"){ 
+
+          slider.style.right= "100%";
+         
+      }
+      else{
+
+        slider.style.right = "35%";
+        
+      }
+})
