@@ -86,14 +86,14 @@ let slider =document.getElementById("slider");
 
 menu.addEventListener("click",()=>{
 
-      if(slider.style.right==="35%"){ 
+      if(slider.style.left==="0px"){ 
 
-          slider.style.right= "100%";
+          slider.style.left= "-200px";
          
       }
       else{
 
-        slider.style.right = "35%";
+        slider.style.left = "0px";
         
       }
 })
