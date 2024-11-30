@@ -17,7 +17,7 @@ let expanding = () => {
             if (window.innerWidth <= 600) {
                 if (element.style.height === "80vh") {
                     par.style.display = "none";
-                    element.style.height = "30vh";
+                    element.style.height = "60vw";
                 } else {
                     par.style.display = "block";
                     element.style.height = "80vh";
