@@ -138,6 +138,13 @@
  }
 
 
+ .stats img{
+
+    width: 100%;
+    height: 50px;
+ }
+
+
  .page1 .container .website-title h2 {
      font-size: 2.5vw;
      padding: 1vw 0;
@@ -222,6 +229,7 @@
      .page1 .container .btns {
          bottom: 3vw;
          margin-left: 2vw;
+         margin-top: 2vw;
      }
 
 

@@ -15,12 +15,12 @@ let expanding = () => {
 
             // Check screen width for mobile adjustments
             if (window.innerWidth <= 600) {
-                if (element.style.height === "80vh") {
+                if (element.style.height === "110vh") {
                     par.style.display = "none";
                     element.style.height = "100vw";
                 } else {
                     par.style.display = "block";
-                    element.style.height = "80vh";
+                    element.style.height = "110vh";
                 }
             } else {
                 if (element.style.height === "50vw") {
