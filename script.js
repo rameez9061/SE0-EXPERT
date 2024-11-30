@@ -1,35 +1,42 @@
-
-let expanding=()=>{
-
-    
-    let btn =document.querySelectorAll("#preview");
+let expanding = () => {
+    let btn = document.querySelectorAll("#preview");
     btn = Array.from(btn);
-    console.log(btn);
 
-
-    
     let cont = document.querySelectorAll("#cont");
-    cont=Array.from(cont);
-    console.log(cont);
-    let para =document.querySelectorAll("#para");
-    para =Array.from(para);
-    
+    cont = Array.from(cont);
+
+    let para = document.querySelectorAll("#para");
+    para = Array.from(para);
+
     btn.forEach((btns, index) => {
         btns.addEventListener("click", () => {
-      let element = cont[index];
-      let par = para[index]; // Get corresponding container
-      if (element.style.height === "30vw") {
-          par.style.display = "block"
-        element.style.height = "50vw";
-      } else {
-          par.style.display = "none";
-        element.style.height = "30vw";
-      }
+            let element = cont[index];
+            let par = para[index]; // Get corresponding container
+
+            // Check screen width for mobile adjustments
+            if (window.innerWidth <= 600) {
+                if (element.style.height === "80vh") {
+                    par.style.display = "none";
+                    element.style.height = "30vh";
+                } else {
+                    par.style.display = "block";
+                    element.style.height = "80vh";
+                }
+            } else {
+                if (element.style.height === "50vw") {
+                    par.style.display = "none";
+                    element.style.height = "30vw";
+                } else {
+                    par.style.display = "block";
+                    element.style.height = "50vw";
+                }
+            }
+        });
     });
-  });
-  
-} 
-expanding()
+};
+
+expanding();
+
 
 
 let head = document.getElementById("title-heading");
