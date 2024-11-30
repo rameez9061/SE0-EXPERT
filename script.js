@@ -18,12 +18,12 @@ let expanding=()=>{
         btns.addEventListener("click", () => {
       let element = cont[index];
       let par = para[index]; // Get corresponding container
-      if (element.style.height === "18vw") {
+      if (element.style.height === "30vw") {
           par.style.display = "block"
-        element.style.height = "40vw";
+        element.style.height = "50vw";
       } else {
           par.style.display = "none";
-        element.style.height = "18vw";
+        element.style.height = "30vw";
       }
     });
   });
