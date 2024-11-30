@@ -25,6 +25,9 @@
      justify-content: space-between;
      padding: 0 4vw;
      border-bottom: 0.7px solid black;
+     position: fixed;
+     top: 0px;
+     z-index: 90;
  }
  
  .nav > h1 {
@@ -88,6 +91,7 @@
      letter-spacing: 0.1vw;
      color: black;
      text-shadow: 1px 1px 5px rgb(84, 83, 83);
+     margin-top: 23vw;
  }
  
  .page1 .container {
@@ -232,43 +236,45 @@
          margin-top: 2vw;
      }
 
+     .slideNav{
+        position: absolute;
+        top: 20vw;
+        left: -200px;
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        box-shadow: 1px 1px 6px black;
+        border-radius: 0px 10px 10px 0px;
+       
+        transition: all 0.3s ease;
+        z-index: 100;
+    }
+   
+    .lists2{
+   
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: 6vw;
+    }
+   
+    .lists2 li{
+   
+         list-style: none;
+         font-size: 4vw;
+         font-weight: 400;
+    }
+   
+    .lists2 li a{
+   
+        text-decoration: none;
+        color: black;
+   
+    }
+
 
  }
  
 
- .slideNav{
-     position: absolute;
-     left: -200px;
-     width: 200px;
-     height: 200px;
-     background-color: white;
-     box-shadow: 1px 1px 6px black;
-     border-radius: 0px 10px 10px 0px;
-    
-     transition: all 0.3s ease;
-     z-index: 100;
- }
-
- .lists2{
-
-     height: 100%;
-     width: 100%;
-     display: flex;
-     flex-direction: column;
-     justify-content: space-around;
-     padding-left: 6vw;
- }
-
- .lists2 li{
-
-      list-style: none;
-      font-size: 4vw;
-      font-weight: 400;
- }
-
- .lists2 li a{
-
-     text-decoration: none;
-     color: black;
-
- }
