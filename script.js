@@ -58,3 +58,22 @@ let sliding = (head) => {
 };
 
 sliding(head);
+
+
+ let all=document.querySelectorAll("#whatsapp-btn");
+ 
+ 
+ all.forEach(btn=>{
+
+
+     btn.addEventListener("click", () => {
+         // Your WhatsApp number and message
+         const phoneNumber = "923001180040"; // Replace with your number (e.g., 923001234567 for Pakistan)
+         const message = encodeURIComponent("Hello! I would like to know more about your services."); // URL-encode your message
+         const url = `https://wa.me/${phoneNumber}/?text=${message}`;
+    
+    console.log("Redirecting to:", url);
+    // Redirect to WhatsApp
+    window.location.href = url;
+});
+})
